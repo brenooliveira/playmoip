@@ -5,5 +5,5 @@ set :raise_errors, false
 set :show_exceptions, false
 
 get "/" do
-  erb :index
+  erb :instrucao_unica
 end

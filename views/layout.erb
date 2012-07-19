@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>playmoip | Moip Pagamentos</title>
+        <link href="stylesheets/bootstrap.css" rel="stylesheet">
+        <link rel="shortcut icon" href="images/palheta_moip.jpg" type="image/x-icon" />
+        <script type="text/javascript" src="javascripts/jquery-1.7.1.min.js"></script>
+    </head>
+
+    <body>
+    	<div class="navbar">
+			<div class="navbar-inner">
+				<div class="container">
+					<b><a class="brand" href="/">playmoip</a></b>
+					<ul class="nav">
+                        <li class="active"><a href="#">Instrução Única</a></li>
+						<li><a href="transparente/index.html">Transparente</a></li>
+						<li><a href="recorrente/index.html">Recorrente</a></li>
+						<li><a href="#">Cadastro Integrado</a></li>
+						<li><a href="#">Notifica&ccedil;&otilde;es</a></li>
+						<li class="divider-vertical"></li>
+					</ul>
+					<img class="pull-right" src="images/moip.png" width="60" height="32" style="padding: 5px"/>
+				</div>
+			</div>
+		</div>
+
+        <%= yield %>
+
+        <script type="text/javascript" src="javascripts/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+	</body>
+</html>
