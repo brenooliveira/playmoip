@@ -10,7 +10,7 @@ get "/" do
 end
 
 post "/cobrar" do
-    puts "Params #{params}"
+    # puts "Params #{params}"
     dados_cobranca = {
                         :value => "8.90",
                         :unique_id => params["id_proprio"],
@@ -33,9 +33,10 @@ post "/cobrar" do
                           :phone => "(61)3211-1221"
                         }
                       }
-    @response = Rmoip.sandbox("01010101010101010101010101010101","ABABABABABABABABABABABABABABABABABABABAB")
+    response = Rmoip.sandbox("01010101010101010101010101010101","ABABABABABABABABABABABABABABABABABABABAB")
         .send(dados_cobranca)
-    puts "Token #{response.token}"
+    puts "Response: #{@response}"
+    # puts "Token #{@response.token}"
 
     erb :response
 end
